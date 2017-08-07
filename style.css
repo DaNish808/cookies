@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#background {
+    height: 300%;
+    background: salmon;
+}
+
+header>h1 {
+    padding: 1em;
+    margin: 0;
+}
+
+#main>article {
+    border: 1px solid black;
+    width: 19%;
+    float: left;
+}
