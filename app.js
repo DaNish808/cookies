@@ -1,11 +1,3 @@
-function publishAll() {
-    shop1.publish();
-    shop2.publish();
-    shop3.publish();
-    shop4.publish();
-    shop5.publish();
-}
-
 
 var shop1 = {
     location: 'PDX Airport',
@@ -87,8 +79,6 @@ var shop1 = {
     }
 }
 
-
-
 var shop2 = {
     location: 'Pioneer Square',
     minCustomers: 3,
@@ -168,8 +158,6 @@ var shop2 = {
         this.toDOM();
     }
 }
-
-
 
 var shop3 = {
     location: 'Powell\'s',
@@ -251,8 +239,6 @@ var shop3 = {
     }
 }
 
-
-
 var shop4 = {
     location: 'St. John\'s',
     minCustomers: 20,
@@ -333,8 +319,6 @@ var shop4 = {
     }
 }
 
-
-
 var shop5 = {
     location: 'Waterfront',
     minCustomers: 2,
@@ -396,6 +380,7 @@ var shop5 = {
                 liVar.innerText = this.dailyCookiesPerHourLog[0][i]      // time string (eg '6am: ')
                                 + this.dailyCookiesPerHourLog[1][i]    // number of cookies
                                 + " cookies";
+                liVar.setAttribute("font-style", 'bold')
                 ulVar.appendChild(liVar);
             }
             else {
@@ -417,3 +402,12 @@ var shop5 = {
 
 
 
+publishAll();
+
+function publishAll() {
+    shop1.publish();
+    shop2.publish();
+    shop3.publish();
+    shop4.publish();
+    shop5.publish();
+}
