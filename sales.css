@@ -1,20 +1,94 @@
 html, body {
     height: 100%;
     margin: 0;
+    color: #6F3662;
 }
 
 #background {
-    height: 300%;
-    background: salmon;
+    height: 60em;
+    background: #F8F8F2;
 }
 
 header>h1 {
-    padding: 1em;
+    padding: 0.2em 0 0 0.5em;
     margin: 0;
+    border-bottom: 4px double #9f6164;
+    color: #FF7182;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 3em;
+    line-height: 1.7em;
 }
 
 #main>article {
-    border: 1px solid black;
+    border: 1px solid #9f6164;
     width: 19%;
     float: left;
 }
+
+.table_box {
+    margin: 2em 0 2em 0;
+    padding: 0 7%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.table_background {
+    display: inline-block;
+    padding: .6em;
+    padding-top: 0.9em;
+    border-radius: 1.5em;
+    background: #F8DEBD;
+    border: 3px solid #9f6164;
+}
+
+.table_background>h3 {
+    width: 16em;
+    position: relative;
+    margin: -1.7em 0 0 -2em;
+    margin-bottom: 0.5em;
+    border: 3px solid #9f6164;
+    border-radius: 1em;
+    background: #FFAE5D; 
+    padding: 0.2em 0.5em;
+}
+
+table {
+    min-width: 54em;
+    border-spacing: 0;
+}
+
+thead th {
+    border-bottom: 2px solid #9f6164;
+}
+
+th:first-child {
+    min-width: 7em;
+    text-align: right;
+    padding-right: 1em;
+    border-right: 2px solid #9f6164;
+}
+
+th:last-child {
+    min-width: 5em;
+    text-align: left;
+    padding-left: 1em;
+    border-left: 2px solid #9f6164;
+
+}
+
+tfoot th {
+    border-top: 2px solid #9f6164;
+}
+
+th, td {
+    padding: .2em .4em;
+}
+
+#link_box {
+    border-top: 4px double #9f6164;
+}
+
+#home_link>p {
+    margin-left: 2em;
+}
+
