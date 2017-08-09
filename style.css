@@ -1,0 +1,50 @@
+color-palette {
+    color: #F8F8F2;
+    color: #F8DEBD;
+    color: #FFAE5D;
+    color: #FF7182;
+    color: #9F6164;
+    color: #6F3662;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #6F3662;
+}
+
+#background {
+    height: 44em;
+    background: #F8F8F2;
+}
+
+header {
+    background: #F8DEBD;
+    padding-left: 2em;
+    align-content: center;
+    height: 8em;
+}
+
+header>h1 {
+    display: inline-block;
+    margin-bottom: 0;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#title-salmon {
+    color: #FF7182;
+}
+
+#title-cookies {
+    color: #9F6164;
+    font-size: 3.2em;
+}
+
+header>h3 {
+    margin: 0;
+    padding: 0 0 .5em 3.2em;
+    font-family: 'Quicksand', sans-serif;
+}

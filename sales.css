@@ -18,7 +18,6 @@ header>h1 {
     margin: 0;
     border-bottom: 4px double #9f6164;
     color: #FF7182;
-    text-shadow: 0 0 1em #FFAE5D;
     font-family: 'Baloo Bhaina', cursive;
     font-size: 3em;
     line-height: 1.7em;
@@ -94,11 +93,13 @@ th, td {
 
 #link_box {
     margin: 0;
-    padding: 1em;
+    padding: 0.4em;
     border-top: 4px double #9f6164;
 }
 
 #home_link>p {
     margin-left: 2em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
 }
 
