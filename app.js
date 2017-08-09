@@ -165,7 +165,7 @@ Shop.prototype.calcAvgTossers = function() {
     for(var i = 0; i < this.tossersNeededLog.length; i++) {
         totalTossers += this.tossersNeededLog[i];
     }
-        avgTossers = totalTossers / this.tossersNeededLog.length;
+        avgTossers = Math.floor(totalTossers / this.tossersNeededLog.length * 100) / 100; //rounds avg to hundreth place
     return avgTossers;
 
 };
