@@ -5,8 +5,12 @@ html, body {
 }
 
 #background {
-    height: 60em;
+    height: 44em;
     background: #F8F8F2;
+}
+
+header, #link_box {    
+    background: #F8DEBD;
 }
 
 header>h1 {
@@ -14,6 +18,7 @@ header>h1 {
     margin: 0;
     border-bottom: 4px double #9f6164;
     color: #FF7182;
+    text-shadow: 0 0 1em #FFAE5D;
     font-family: 'Baloo Bhaina', cursive;
     font-size: 3em;
     line-height: 1.7em;
@@ -35,10 +40,12 @@ header>h1 {
 .table_background {
     display: inline-block;
     padding: .6em;
-    padding-top: 0.9em;
+    padding-top: 0.75em;
     border-radius: 1.5em;
     background: #F8DEBD;
     border: 3px solid #9f6164;
+    width: 86%;
+    min-width: 59em;
 }
 
 .table_background>h3 {
@@ -55,6 +62,7 @@ header>h1 {
 table {
     min-width: 54em;
     border-spacing: 0;
+    width:100%;
 }
 
 thead th {
@@ -62,7 +70,7 @@ thead th {
 }
 
 th:first-child {
-    min-width: 7em;
+    min-width: 8em;
     text-align: right;
     padding-right: 1em;
     border-right: 2px solid #9f6164;
@@ -85,6 +93,8 @@ th, td {
 }
 
 #link_box {
+    margin: 0;
+    padding: 1em;
     border-top: 4px double #9f6164;
 }
 
