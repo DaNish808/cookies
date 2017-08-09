@@ -9,6 +9,7 @@ color-palette {
 
 html, body {
     height: 100%;
+    min-width: 63em;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     color: #6F3662;
@@ -20,17 +21,37 @@ html, body {
 }
 
 header {
-    background: #F8DEBD;
-    padding-left: 2em;
+    background: none;
     align-content: center;
-    height: 8em;
+    height: 100%;
+    margin-bottom:-26px;
+    border-bottom: 30px solid #9f6164;
 }
 
-header>h1 {
+#coffee-cookies-img {
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+}
+
+#h1-placer {
+    width: fit-content;
+    margin: auto;
+    padding-top: 15%;
+}
+
+#title-container {
+    padding: 1.8em 3em 1.5em 3em;
+    border-radius: 1.5em;
+    background: #F8DEBD;
+    border: 3px solid #9f6164;
+}
+
+header h1 {
     display: inline-block;
-    margin-bottom: 0;
+    margin: 0;
     font-family: 'Baloo Bhaina', cursive;
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1em;
 }
 
@@ -40,11 +61,25 @@ header>h1 {
 
 #title-cookies {
     color: #9F6164;
-    font-size: 3.2em;
 }
 
-header>h3 {
+header h3 {
     margin: 0;
-    padding: 0 0 .5em 3.2em;
+    padding: 0;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
+}
+
+/* #coffee-cookies-box {
+    width: 100%;
+    max-height: 30%;
+} */
+
+#salmon-box {
+    width: 30em;
+    margin: 1.5em auto;
+}
+
+#salmon-image {
+    width: 100%;
 }
