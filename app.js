@@ -1,89 +1,4 @@
 
-// old code using literal object notation
-(function() {
-    var shop1 = {
-        location: 'PDX Airport',
-        minCustomers: 23,
-        maxCustomers: 65,
-        avgCookiesPerCustomer: 6.3,
-
-        dailyCookiesPerHourLog: [ [],     // first array element: hour (string)
-                                [] ],   // second array element: number of cookies (integer)
-                                    
-        totalCookies: 0,
-
-        checkCustomersThisHour: function() {
-            var customers = Math.floor(
-                Math.random()
-                * (this.maxCustomers - this.minCustomers + 1) 
-                + this.minCustomers
-            );
-            console.log('customers: ' + customers);
-            return customers;
-        },
-
-        calcLogs: function() {
-            for(var i = 6; i <= 20; i++){
-                if(Math.floor(i / 12) === 0) {
-                    this.dailyCookiesPerHourLog[0].push( (i) + 'am: ' );
-                }
-                else {
-                    this.dailyCookiesPerHourLog[0].push( (i % 12) + 'pm: ');
-                }
-                this.dailyCookiesPerHourLog[1].push(
-                Math.floor(
-                    this.checkCustomersThisHour() * this.avgCookiesPerCustomer 
-                ) 
-                );
-            }
-            console.log(this.dailyCookiesPerHourLog);
-            return this.dailyCookiesPerHourLog;
-        },
-
-        calcTotalCookies: function() {
-            this.totalCookies = 0;
-            for(var i = 0; i < this.dailyCookiesPerHourLog[1].length; i++) {
-                this.totalCookies += this.dailyCookiesPerHourLog[1][i];
-            }
-            return this.totalCookies;
-        },
-
-        cookiesToDOM: function() {
-            var mainVar = document.getElementById('main');
-            var articleVar = document.createElement('article');
-
-            var h3Var = document.createElement('h3');
-            h3Var.innerText = this.location;
-
-            var ulVar = document.createElement('ul');
-            for(var i = 0; i <= this.dailyCookiesPerHourLog[0].length; i++) {
-                if(i !== this.dailyCookiesPerHourLog[0].length) {
-                    var liVar = document.createElement('li');
-                    liVar.innerText = this.dailyCookiesPerHourLog[0][i]      // time string (eg '6am: ')
-                                    + this.dailyCookiesPerHourLog[1][i]    // number of cookies
-                                    + " cookies";
-                    ulVar.appendChild(liVar);
-                }
-                else {
-                    var totalLiVar = document.createElement('li');
-                    totalLiVar.innerText = 'Total cookie count: ' + this.calcTotalCookies();
-                    ulVar.appendChild(totalLiVar);
-                }
-            }
-            articleVar.appendChild(h3Var);
-            articleVar.appendChild(ulVar);
-            mainVar.appendChild(articleVar);
-        },
-
-        //render();
-    }
-
-})();
-
-
-
-
-
 var shopProps = {
     location:               
         ['PDX Airport', 'Pioneer Square', 'Powell\'s', 'St. John\'s', 'Waterfront'],
@@ -96,6 +11,7 @@ var shopProps = {
 }
 
 
+
 function Shop(shopProps, shopIndex) {
     this.location = shopProps.location[shopIndex];
     this.minCustomers = shopProps.minCustomers[shopIndex];
@@ -105,9 +21,8 @@ function Shop(shopProps, shopIndex) {
     this.dailyCookiesPerHourLog = [ [],     // first array element: hour (string)
                                     [] ];   // second array element: number of cookies (integer)    
     this.tossersNeededLog = [];
+    
 }
-
-Shop.prototype.totalCookies = 0;
 
 Shop.prototype.checkCustomersThisHour = function() {
     var customers = Math.floor(
@@ -219,6 +134,8 @@ Shop.prototype.render = function() {
     this.cookiesToDOM();
 }
 
+
+
 function renderTime(tableNum) {
     var elTHead = document.getElementsByTagName('thead')[tableNum];
     var elTr = document.createElement('tr');
@@ -287,7 +204,6 @@ function renderTotals(shops) {
     elTFoot.appendChild(elTr);
 }
 
-
 function renderAll() {
     var shops = [];
 
@@ -306,6 +222,7 @@ function renderAll() {
         shops[i].tossersToDOM();
     }
 }
+
 
 
 renderAll();
