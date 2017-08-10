@@ -226,6 +226,28 @@ function clearTables() {
     }
 }
 
+function setListener() {
+    
+    var elForm = document.getElementsByTagName('form')[0];
+    elForm.addEventListener('submit', function() {
+
+        event.preventDefault();
+        if(parseInt(this.min_customers.value) > parseInt(this.max_customers.value)) {
+            alert('invalid input');
+        }
+        else {
+            shopProps.newShop(
+                this.location.value,
+                parseFloat(this.min_customers.value),
+                parseInt(this.max_customers.value),
+                parseInt(this.avg_cookies.value)
+            );
+            renderAll();
+
+        }
+    });
+}
+
 function renderAll() {
     var shops = [];
     clearTables();
@@ -246,25 +268,6 @@ function renderAll() {
     }
 
     setListener();
-}
-
-
-
-function setListener() {
-    
-    var elForm = document.getElementsByTagName('form')[0];
-    elForm.addEventListener('submit', function() {
-
-        event.preventDefault();
-
-        shopProps.newShop(
-            this.location.value,
-            this.min_customers.value,
-            this.max_customers.value,
-            this.avg_cookies.value
-        );
-        renderAll();
-    });
 }
 
 
