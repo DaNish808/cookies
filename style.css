@@ -17,15 +17,13 @@ html, body {
 
 #background {
     height: 44em;
-    background: #F8F8F2;
 }
 
 header {
     background: none;
     align-content: center;
     height: 100%;
-    margin-bottom:-26px;
-    border-bottom: 30px solid #9f6164;
+    margin-bottom: 0px;
 }
 
 #coffee-cookies-img {
@@ -75,11 +73,73 @@ header h3 {
     max-height: 30%;
 } */
 
-#salmon-box {
+.info-div {
+    height: 11em;
+    padding: 10% 0;
+    border-top: 15px solid #9f6164;
+    border-bottom: 15px solid #9f6164;
+    background: #F8F8F2;
+    margin-bottom: 6em;
+    font-size: 18px;
+}
+
+.info-div>div {
+    width: 66%;
+    margin: auto;
+}
+
+.info-div h3 {
+    margin-left: -1em;
+}
+
+#salmon-space {
+    height: 13em;
+    margin-bottom: 6em;
+    overflow-x: hidden;
+    background: #F8F8F2;
+    border-top: 15px solid #9f6164;
+    border-bottom: 15px solid #9f6164;
+}
+
+#salmon-animation {
     width: 30em;
     margin: 1.5em auto;
+    animation-name: move;
+    animation-duration: 28s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 #salmon-image {
     width: 100%;
 }
+
+ @keyframes move {
+
+    0% { margin-left:-70em; }
+    49% 
+    { 
+        margin-left: 90em;
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    51% { 
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+     }
+    100% { 
+        margin-left:-60em;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+} 
