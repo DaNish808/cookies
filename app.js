@@ -1,5 +1,6 @@
 
 var shopProps = {
+
     location:               
         ['PDX Airport', 'Pioneer Square', 'Powell\'s', 'St. John\'s', 'Waterfront'],
     minCustomers:           
@@ -8,6 +9,13 @@ var shopProps = {
         [           65,               24,          38,            38,           16],
     avgCookiesPerCustomer:  
         [          6.3,              1.2,         3.7,           2.3,          4.6],
+
+    newShop: function(location, minCustomers, maxCustomers, avgCookies) {
+        this.location.push(location);
+        this.minCustomers.push(minCustomers);
+        this.maxCustomers.push(maxCustomers);
+        this.avgCookiesPerCustomer.push(avgCookies);
+    },
 }
 
 
@@ -21,7 +29,6 @@ function Shop(shopProps, shopIndex) {
     this.dailyCookiesPerHourLog = [ [],     // first array element: hour (string)
                                     [] ];   // second array element: number of cookies (integer)    
     this.tossersNeededLog = [];
-    
 }
 
 Shop.prototype.checkCustomersThisHour = function() {
@@ -132,7 +139,7 @@ Shop.prototype.tossersToDOM = function() {
 Shop.prototype.render = function() {
     this.calcLogs();
     this.cookiesToDOM();
-}
+};
 
 
 
@@ -204,8 +211,24 @@ function renderTotals(shops) {
     elTFoot.appendChild(elTr);
 }
 
+function clearTables() {
+    var theads = document.getElementsByTagName('thead');
+    for(var i = 0; i < theads.length; i++) {
+        theads[i].innerHTML = '';
+    }
+    var tbodys = document.getElementsByTagName('tbody');
+    for(var i = 0; i < tbodys.length; i++) {
+        tbodys[i].innerHTML = '';
+    }
+    var tfoots = document.getElementsByTagName('tfoot');
+    for(var i = 0; i < tfoots.length; i++) {
+        tfoots[i].innerHTML = '';
+    }
+}
+
 function renderAll() {
     var shops = [];
+    clearTables();
 
     renderTime(0);
 
@@ -221,8 +244,28 @@ function renderAll() {
     for(var i = 0; i < shopProps.location.length; i++) {
         shops[i].tossersToDOM();
     }
+
+    setListener();
 }
 
+
+
+function setListener() {
+    
+    var elForm = document.getElementsByTagName('form')[0];
+    elForm.addEventListener('submit', function() {
+
+        event.preventDefault();
+
+        shopProps.newShop(
+            this.location.value,
+            this.min_customers.value,
+            this.max_customers.value,
+            this.avg_cookies.value
+        );
+        renderAll();
+    });
+}
 
 
 renderAll();
