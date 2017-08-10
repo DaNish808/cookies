@@ -28,6 +28,7 @@ header {
 
 #coffee-cookies-img {
     width: 100%;
+    min-width: 63em;
     position: fixed;
     z-index: -100;
 }
@@ -74,7 +75,6 @@ header h3 {
 } */
 
 .info-div {
-    height: 11em;
     padding: 10% 0;
     border-top: 15px solid #9f6164;
     border-bottom: 15px solid #9f6164;
@@ -88,8 +88,34 @@ header h3 {
     margin: auto;
 }
 
+#greeting-div {
+    height: 10em;
+}
+
+#location-div {
+    height: 8em;
+}
+
+#contact-div {
+    height: 7em;
+}
+
 .info-div h3 {
-    margin-left: -1em;
+    margin-left: -1em;
+    color: #FF7182;
+}
+
+.centered-info {
+    text-align: center;
+}
+
+.centered-info h3 {
+    margin: 0;
+}
+
+.centered-info ul {
+    padding: 0;
+    list-style: none;    
 }
 
 #salmon-space {
