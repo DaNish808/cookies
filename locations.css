@@ -13,16 +13,16 @@ button {
     margin: 0 .5em 0 .5em;
 }
 
-/* ul {
-    list-style: none;
-    margin-left: -2.em;
-}
-
-li {
-    float: left;
-    margin: 0 .5em 0 .5em;
-} */
-
 #link_box {
     clear: left;
+}
+
+#map-positioner {
+    height: 400px;
+}
+
+#map-container {
+    width: 750px;
+    height: 100%;
+    margin: auto;
 }
