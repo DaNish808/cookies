@@ -122,7 +122,7 @@ header h3 {
     height: 13em;
     margin-bottom: 6em;
     overflow-x: hidden;
-    background: #F8F8F2;
+    background: #F8DEBD;
     border-top: 15px solid #9f6164;
     border-bottom: 15px solid #9f6164;
 }
@@ -169,3 +169,9 @@ header h3 {
         -ms-filter: "FlipH";
     }
 } 
+
+
+a, a:visited {
+    color: #6F3662;
+    text-shadow: 0.1em 0 0.1em #FFAE5D;
+}

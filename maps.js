@@ -83,3 +83,5 @@ mapBank.displayMap(1);
 for(var i = 0; i < mapBank.elButtons.length; i++){
     mapBank.createListener(i);
 }
+
+clear();
