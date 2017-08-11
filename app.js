@@ -20,11 +20,11 @@ var shopProps = {
 
 
 
-function Shop(shopProps, shopIndex) {
-    this.location = shopProps.location[shopIndex];
-    this.minCustomers = shopProps.minCustomers[shopIndex];
-    this.maxCustomers = shopProps.maxCustomers[shopIndex];
-    this.avgCookiesPerCustomer = shopProps.avgCookiesPerCustomer[shopIndex];
+function Shop(location, minCustomers, maxCustomers, avgCookiesPerCustomer) {
+    this.location = location;
+    this.minCustomers = minCustomers;
+    this.maxCustomers = maxCustomers;
+    this.avgCookiesPerCustomer = avgCookiesPerCustomer;
 
     this.dailyCookiesPerHourLog = [ [],     // first array element: hour (string)
                                     [] ];   // second array element: number of cookies (integer)    
@@ -261,7 +261,7 @@ function renderAll() {
     renderTime(0);
 
     for(var i = 0; i < shopProps.location.length; i++) {
-        shops[i] = new Shop(shopProps, i);
+        shops[i] = new Shop(shopProps.location[i], shopProps.minCustomers[i], shopProps.maxCustomers[i], shopProps.avgCookiesPerCustomer[i]);
         shops[i].render();
     }
 
