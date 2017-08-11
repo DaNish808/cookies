@@ -99,6 +99,10 @@ th, td {
     margin: 6em 0;
 }
 
+#form-container {
+    margin-left: 2em;
+}
+
 fieldset {
     width: 86%;
     min-width: 59em;
@@ -115,6 +119,7 @@ legend {
     border-radius: 1em;
     background: #FFAE5D; 
     padding: 0.2em 0.5em;
+    margin-left: -2em;
 }
 
 .half-form {

@@ -243,9 +243,9 @@ function setListener() {
                 parseInt(this.avg_cookies.value)
             );
 
-            this.location.value = '...';
-            this.min_customers.value = "###";
-            this.max_customers.value = "###";
+            this.location.value = '';
+            this.min_customers.value = "";
+            this.max_customers.value = "";
             this.avg_cookies.value = "";
 
             renderAll();
@@ -272,9 +272,8 @@ function renderAll() {
     for(var i = 0; i < shopProps.location.length; i++) {
         shops[i].tossersToDOM();
     }
-
-    setListener();
 }
 
 
 renderAll();
+setListener();
