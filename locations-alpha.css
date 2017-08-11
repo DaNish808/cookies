@@ -1,0 +1,39 @@
+
+html, body {
+    text-align: center;
+}
+
+header {
+    padding: 2em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+nav {
+    height: 1.5em;
+    width: fit-content;
+    margin: auto;
+}
+
+button {
+    margin: 0 .5em 0 .5em;
+}
+
+#map-positioner {
+    height: 400px;
+}
+
+#map-container {
+    width: 750px;
+    height: 100%;
+    margin: 1.5em auto 5em auto;
+}
+
+#link_box {
+    clear: left;
+    margin: 3em 0;
+}

@@ -26,8 +26,8 @@ var mapBank = {
 
     displayMap: function(index) {
         this.elMapDiv.innerHTML = '';
+        // throw new Error('Google Map Error');
         this.elMapDiv.innerHTML = this.maps[index];
-        // this.elMapDiv.innerText = this.testArray;
     },
 
     // getEventIndex: function(e) {

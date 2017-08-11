@@ -96,11 +96,11 @@ th, td {
     font-family: 'Quicksand', sans-serif;
     color: #6F3662;
     font-weight: bold;
-    margin: 6em 0;
+    margin: 6em 0 7em 0;
 }
 
 #form-container {
-    margin-left: 2em;
+    padding: 0 7%;
 }
 
 fieldset {
