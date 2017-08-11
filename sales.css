@@ -5,7 +5,7 @@ html, body {
 }
 
 #background {
-    height: 44em;
+    height: 66em;
     background: #F8F8F2;
 }
 
@@ -16,6 +16,7 @@ header, #link_box {
 header>h1 {
     padding: 0.2em 0 0 0.5em;
     margin: 0;
+    margin-bottom: 1em;
     border-bottom: 4px double #9f6164;
     color: #FF7182;
     font-family: 'Baloo Bhaina', cursive;
@@ -91,6 +92,46 @@ th, td {
     padding: .2em .4em;
 }
 
+#new-shop-form-positioner {
+    font-family: 'Quicksand', sans-serif;
+    color: #6F3662;
+    font-weight: bold;
+    margin: 6em 0;
+}
+
+fieldset {
+    width: 86%;
+    min-width: 59em;
+    margin: auto;
+    padding: .6em;
+    padding-top: 0.75em;
+    border-radius: 1.5em;
+    background: #F8DEBD;
+    border: 3px solid #9f6164;
+}
+
+legend {
+    border: 3px solid #9f6164;
+    border-radius: 1em;
+    background: #FFAE5D; 
+    padding: 0.2em 0.5em;
+}
+
+.half-form {
+    width: 49%;
+    float: left;
+    text-align: right;
+}
+
+input {
+    margin: 0.5em 0;
+}
+
+button {
+    float: right;
+    margin: 0.5em 2em 0 0.5em;
+}
+
 #link_box {
     margin: 0;
     padding: 0.4em;
@@ -99,7 +140,7 @@ th, td {
 
 #home_link>p {
     margin-left: 2em;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Baloo Bhaina', cursive;
     font-size: 1.3em;
 }
 

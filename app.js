@@ -242,6 +242,12 @@ function setListener() {
                 parseInt(this.max_customers.value),
                 parseInt(this.avg_cookies.value)
             );
+
+            this.location.value = '...';
+            this.min_customers.value = "###";
+            this.max_customers.value = "###";
+            this.avg_cookies.value = "";
+
             renderAll();
 
         }

@@ -49,18 +49,22 @@
                         <fieldset>
                             <legend>Add Shop</legend>
 
-                            <label for='location'>Location:</label>
-                            <input id='location' type="text" placeholder="..." />
-
-                            <label for='avg_cookies'>Average Cookies per Customer:</label>
-                            <input id='avg_cookies' type='text' placeholder="###" />
-                            <br/>
-                            <label for='min_customers'>Minimum Hourly Customers:</label>
-                            <input id='min_customers' type='number' placeholder="###" />
-
-                            <label for='max_customers'>Maximum Hourly Customers:</label>
-                            <input id='max_customers' type='number' placeholder="###" />
-                            <br/>
+                            <div class='half-form' id='form-left'>
+                                <label for='location'>Location:</label>
+                                <input id='location' type="text" placeholder="..." />
+                                <br/>
+                                <label for='avg_cookies'>Average Cookies per Customer:</label>
+                                <input id='avg_cookies' type='text' placeholder="###" />
+                                <br/>
+                            </div>
+                            <div class='half-form' id='form-right'>
+                                <label for='min_customers'>Minimum Hourly Customers:</label>
+                                <input id='min_customers' type='number' placeholder="###" />
+                                <br/>
+                                <label for='max_customers'>Maximum Hourly Customers:</label>
+                                <input id='max_customers' type='number' placeholder="###" />
+                                <br/>
+                            </div>
                             <button id='submit-button'>Submit</button>
                         </fieldset>
                     </form>
