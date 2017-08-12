@@ -130,7 +130,7 @@ header h3 {
 #salmon-animation {
     width: 30em;
     margin: 1.5em auto;
-    animation-name: move;
+    animation-name: moveSalmon;
     animation-duration: 28s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -140,12 +140,12 @@ header h3 {
     width: 100%;
 }
 
- @keyframes move {
+ @keyframes moveSalmon {
 
-    0% { margin-left:-70em; }
+    0% { margin-left:-50%; }
     49% 
     { 
-        margin-left: 90em;
+        margin-left: 120%;
         -moz-transform: scaleX(1);
         -o-transform: scaleX(1);
         -webkit-transform: scaleX(1);
@@ -160,7 +160,60 @@ header h3 {
         -ms-filter: "FlipH";
      }
     100% { 
-        margin-left:-60em;
+        margin-left:-40%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+} 
+#chinook-space {
+    height: 13em;
+    margin-bottom: 6em;
+    overflow: hidden;
+    background: white;
+    border-top: 15px solid #9f6164;
+    border-bottom: 15px solid #9f6164;
+}
+
+#chinook-animation {
+    width: 30em;
+    height: 85%;
+    margin: 1.5em auto;
+    animation-name: moveChinook;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#chinook-image {
+    width: 100%;
+    height: 100%;
+}
+
+ @keyframes moveChinook {
+
+    0% { margin-left:120%; }
+    49% 
+    { 
+        margin-left: -40%;
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    51% { 
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+     }
+    100% { 
+        margin-left:110%;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -170,8 +223,35 @@ header h3 {
     }
 } 
 
-
 a, a:visited {
     color: #6F3662;
     text-shadow: 0.1em 0 0.1em #FFAE5D;
 }
+
+/* nav {
+    max-height: 150px;
+    max-width: 38px;
+    position: fixed;
+    top: 200px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+h5 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav img {
+    width: 100%;
+    height: auto;
+} */
