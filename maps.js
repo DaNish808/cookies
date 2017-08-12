@@ -10,12 +10,23 @@ var mapBank = {
                  'Powell\'s', 
                  'St. John\'s', 
                  'Waterfront' ],
-    maps: [ '<div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Portland%20International%20Airport%2C%20Northeast%20Airport%20Way%2C%20Portland%2C%20OR%2C%20USA&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>google maps <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:400px;width:750px;}.gmap_canvas {background:none!important;height:400px;width:750px;}</style></div>',
-            '<div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%2Cpioneer%20square%20portland%20or%2C%20us&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:400px;width:750px;}.gmap_canvas {background:none!important;height:400px;width:750px;}</style></div>',
-            '<div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=1005%20W%20Burnside%20St%2C%20Portland%2C%20OR%2097209&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:400px;width:750px;}.gmap_canvas {background:none!important;height:400px;width:750px;}</style></div>',
-            '<div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=777%20NE%20Martin%20Luther%20King%20Jr%20Blvd%2C%20Portland%2C%20OR%2097232&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:400px;width:750px;}.gmap_canvas {background:none!important;height:400px;width:750px;}</style></div>',
-            '<div class="mapouter"><div class="gmap_canvas"><iframe width="750" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2001%20SW%20River%20Dr%2C%20Portland%2C%20OR%2097201&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:400px;width:750px;}.gmap_canvas {background:none!important;height:400px;width:750px;}</style></div>' ],
-    testArray: ['A', 'b', 'c', 'D', 'e'],
+    maps: [ '<div class="mapouter"><div class="gmap_canvas"><iframe width="2000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=10280%20NE%20Cascades%20Pkwy%2C%20Portland%2C%20OR%2097220&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:500px;width:2000px;}.gmap_canvas {background:none!important;height:500px;width:2000px;}</style></div>',
+            '<div class="mapouter"><div class="gmap_canvas"><iframe width="2000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pioneer%20square%2C%20Portland%2C%20OR%2097220&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:500px;width:2000px;}.gmap_canvas {background:none!important;height:500px;width:2000px;}</style></div>',
+            '<div class="mapouter"><div class="gmap_canvas"><iframe width="2000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pdx%20codefellows%2C%20Portland%2C%20OR%2097220&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:500px;width:2000px;}.gmap_canvas {background:none!important;height:500px;width:2000px;}</style></div>',
+            '<div class="mapouter"><div class="gmap_canvas"><iframe width="2000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=6635%20N%20Baltimore%20Ave%20%23102%2C%20Portland%2C%20OR%2097203&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:500px;width:2000px;}.gmap_canvas {background:none!important;height:500px;width:2000px;}</style></div>',
+            '<div class="mapouter"><div class="gmap_canvas"><iframe width="2000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=W%20Burnside%20St%20%26%20Ankeny%2C%20Portland%2C%20OR%2097204&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>embed google map <a href="http://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{overflow:hidden;height:500px;width:2000px;}.gmap_canvas {background:none!important;height:500px;width:2000px;}</style></div>' ],
+    info: [ '',
+            '',
+            '',
+            '',
+            '' ],
+    images: [ './pictures/frosted-cookie.jpg',
+              './pictures/shirt.jpg',
+              './pictures/',
+              './pictures/cutter.jpeg',
+              './pictures/' ],
+
+
     createElButtons: function() {
         for(var i = 0; i < this.locations.length; i++) {
             this.elButtons[i] = document.createElement('button');
@@ -77,7 +88,7 @@ var mapBank = {
 
 mapBank.createElButtons();
 
-mapBank.displayMap(1);
+mapBank.displayMap(0);
 
 
 for(var i = 0; i < mapBank.elButtons.length; i++){
