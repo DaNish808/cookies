@@ -142,7 +142,7 @@ header h3 {
 
  @keyframes moveSalmon {
 
-    0% { margin-left:-50%; }
+    0% { margin-left:-60%; }
     49% 
     { 
         margin-left: 120%;
@@ -160,7 +160,7 @@ header h3 {
         -ms-filter: "FlipH";
      }
     100% { 
-        margin-left:-40%;
+        margin-left:-55%;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -198,7 +198,7 @@ header h3 {
     0% { margin-left:120%; }
     49% 
     { 
-        margin-left: -40%;
+        margin-left: -50%;
         -moz-transform: scaleX(1);
         -o-transform: scaleX(1);
         -webkit-transform: scaleX(1);
