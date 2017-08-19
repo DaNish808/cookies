@@ -11,7 +11,7 @@ var shopProps = {
         [          6.3,              1.2,         3.7,           2.3,          4.6],
 
     newShop: function(location, minCustomers, maxCustomers, avgCookies) {
-        this.location.push(location);
+          this.location.push(location);
         this.minCustomers.push(minCustomers);
         this.maxCustomers.push(maxCustomers);
         this.avgCookiesPerCustomer.push(avgCookies);
@@ -276,4 +276,3 @@ function renderAll() {
 
 
 renderAll();
-setListener();
